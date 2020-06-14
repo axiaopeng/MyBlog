@@ -6,7 +6,7 @@
 
                 var res = await fetch(url);
                 var result = await res.json();
-                img.src = result.imgs
+                img.src = "https://www.apeng.work:8222" + result.imgs
                 content.innerHTML = result.content
             }
             getDetail()
@@ -19,25 +19,41 @@
         }
         
         .main {
-            width: 71.428571rem;
-            margin: 2.857143rem auto;
+            width: 100%;
+            max-width: 1000px;
+            margin: 1.857143rem auto;
             background-color: #fff;
         }
         
         .main .main-img {
             box-sizing: border-box;
-            width: 57.142857rem;
+            width: 70%;
             height: 21.428571rem;
             margin: 1.428571rem auto;
-            background-color: aqua;
+            /* background-color: aqua; */
         }
         
         .main .main-img img {
+            margin-top: 2rem;
             width: 100%;
             height: 100%;
         }
         
         .main-content {
-            width: 60.714286rem;
-            margin: 2.857143rem;
+            margin: 3.857143rem 2.857143rem;
+        }
+        
+        @media screen and (max-width: 1050px) {
+            html {
+                font-size: 12px;
+            }
+        }
+        
+        @media screen and (max-width: 900px) {
+            html {
+                font-size: 12px;
+            }
+            .main .main-img {
+                height: 30vw;
+            }
         }</style></head><body><div class=main><div class=main-img><img class="" src="" alt=""></div><div class=main-content></div></div><script src=js/details.js></script></body></html>

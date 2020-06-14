@@ -92,6 +92,8 @@ main .main-left {
 main .main-left .row .lb-big {
   height: 23.142857rem;
   position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 main .main-left .row .lb-big .lb-main {
   height: 100%;
@@ -116,6 +118,45 @@ main .main-left .row .lb-small {
 }
 main .main-left .row .lb-small:nth-child(2) {
   margin-bottom: 1rem;
+}
+main .main-left .row .lb-small:nth-child(2) > div {
+  color: #fff;
+  background: url('../image/cover_socket.jpg');
+  background-size: 100% 100%;
+  width: 100%;
+  height: 11.071429rem;
+  text-align: center;
+  line-height: 5.5rem;
+  font-size: 2rem;
+}
+main .main-left .row .lb-small:nth-child(2) > div > a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+main .main-left .row .lb-small:nth-child(2) > div > a:hover {
+  color: #ccc;
+}
+main .main-left .row .lb-small:nth-child(3) {
+  margin-bottom: 1rem;
+}
+main .main-left .row .lb-small:nth-child(3) > div {
+  color: #fff;
+  background: url('../image/timg.jpg');
+  background-size: 100% 100%;
+  width: 100%;
+  height: 11.071429rem;
+  text-align: center;
+  line-height: 5.5rem;
+  font-size: 2rem;
+}
+main .main-left .row .lb-small:nth-child(3) > div > a {
+  display: block;
+  text-decoration: none;
+  color: #feba31;
+}
+main .main-left .row .lb-small:nth-child(3) > div > a:hover {
+  color: #ccc;
 }
 main .main-left .row .lb-small img {
   width: 100%;
