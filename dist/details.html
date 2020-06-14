@@ -1,0 +1,43 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Document</title><script>window.onload = function() {
+            var url = 'https://www.apeng.work:8222/details?' + window.location.href.split('?')[1];
+            var img = document.querySelector('.main-img>img');
+            var content = document.querySelector('.main-content');
+            async function getDetail() {
+
+                var res = await fetch(url);
+                var result = await res.json();
+                img.src = result.imgs
+                content.innerHTML = result.content
+            }
+            getDetail()
+        }</script><style>html {
+            font-size: 14px;
+        }
+        
+        body {
+            background-color: #e8e9ec;
+        }
+        
+        .main {
+            width: 71.428571rem;
+            margin: 2.857143rem auto;
+            background-color: #fff;
+        }
+        
+        .main .main-img {
+            box-sizing: border-box;
+            width: 57.142857rem;
+            height: 21.428571rem;
+            margin: 1.428571rem auto;
+            background-color: aqua;
+        }
+        
+        .main .main-img img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .main-content {
+            width: 60.714286rem;
+            margin: 2.857143rem;
+        }</style></head><body><div class=main><div class=main-img><img class="" src="" alt=""></div><div class=main-content></div></div><script src=js/details.js></script></body></html>
